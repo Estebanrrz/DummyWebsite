@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.AssemblyInfo.cs
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\Framework.deps.json
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\Framework.dll
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\bin\Debug\net6.0\Framework.pdb
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.dll
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\refint\Framework.dll
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\Framework.pdb
+C:\Users\User\source\repos\DummyWebSiteTests\Framework\obj\Debug\net6.0\ref\Framework.dll
