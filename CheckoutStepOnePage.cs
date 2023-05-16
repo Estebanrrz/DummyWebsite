@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -8,7 +9,7 @@ namespace Framework
     public class CheckoutStepOnePage : BasePage
     {
 
-        public CheckoutStepOnePage(IWebDriver driver) : base(driver)
+        public CheckoutStepOnePage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region locators
@@ -18,10 +19,10 @@ namespace Framework
         private const string ID_CONTINUE_BUTTON = "continue";
         #endregion
         #region Methods
-        public void TypeFirstName(string firstName) => FindElement(By.Id(ID_FIRST_NAME)).SendKeys(firstName);
-        public void TypeLastName(string lastName) => FindElement(By.Id(ID_LAST_NAME)).SendKeys(lastName);
-        public void TypeZipCode(string zipCode) => FindElement(By.Id(ID_ZIP_CODE)).SendKeys(zipCode);
-        public void ClickContinueButton() => FindElement(By.Id(ID_CONTINUE_BUTTON)).Click();
+        public void TypeFirstName(string firstName) => Driver.FindElement(By.Id(ID_FIRST_NAME)).SendKeys(firstName);
+        public void TypeLastName(string lastName) => Driver.FindElement(By.Id(ID_LAST_NAME)).SendKeys(lastName);
+        public void TypeZipCode(string zipCode) => Driver.FindElement(By.Id(ID_ZIP_CODE)).SendKeys(zipCode);
+        public void ClickContinueButton() => Driver.FindElement(By.Id(ID_CONTINUE_BUTTON)).Click();
 
         #endregion
     }

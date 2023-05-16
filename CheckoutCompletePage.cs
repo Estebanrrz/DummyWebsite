@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -7,7 +8,7 @@ namespace Framework
     /// </summary>
     public class CheckoutCompletePage : BasePage
     {
-        public CheckoutCompletePage(IWebDriver driver) : base(driver)
+        public CheckoutCompletePage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region locators

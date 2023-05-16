@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -8,14 +9,14 @@ namespace Framework
     public class CartPage : BasePage
     {
 
-        public CartPage(IWebDriver driver) : base(driver)
+        public CartPage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region locators 
         private const string ID_CHECKOUT_BUTTON = "checkout";
         #endregion
         #region Methods
-        public void ClickCheckoutButton() => FindElement(By.Id(ID_CHECKOUT_BUTTON)).Click();
+        public void ClickCheckoutButton() => Driver.FindElement(By.Id(ID_CHECKOUT_BUTTON)).Click();
         #endregion
     }
 }

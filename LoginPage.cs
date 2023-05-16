@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -7,7 +8,7 @@ namespace Framework
     /// </summary>
     public class LoginPage : BasePage
     {
-        public LoginPage(IWebDriver driver) : base(driver)
+        public LoginPage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region Locators
@@ -21,18 +22,18 @@ namespace Framework
         /// Type Username on Username field
         /// </summary>
         /// <param name="username"></param>
-        public void TypeUsername(string username)=> FindElement(By.Id(ID_USERNAME)).SendKeys(username);
+        public void TypeUsername(string username)=> Driver.FindElement(By.Id(ID_USERNAME)).SendKeys(username);
         
         /// <summary>
         /// Type Password on Password field
         /// </summary>
         /// <param name="password"></param>
-        public void TypePassword(string password)=> FindElement(By.Id(ID_PASSWORD)).SendKeys(password);
+        public void TypePassword(string password)=> Driver.FindElement(By.Id(ID_PASSWORD)).SendKeys(password);
 
         /// <summary>
         /// Click on Login Button
         /// </summary>
-        public void ClickLoginButton()=> FindElement(By.Id(ID_LOGIN_BUTTON)).Click();
+        public void ClickLoginButton()=> Driver.FindElement(By.Id(ID_LOGIN_BUTTON)).Click();
 
         #endregion
     }

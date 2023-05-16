@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -7,7 +8,7 @@ namespace Framework
     /// </summary>
     public class CheckOutStepTwoPage : BasePage
     {
-        public CheckOutStepTwoPage(IWebDriver driver) : base(driver)
+        public CheckOutStepTwoPage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region locators
@@ -15,8 +16,8 @@ namespace Framework
         private const string XPATH_ITEM_TOTAL = "//div[@class='summary_subtotal_label']";
         #endregion
         #region Methods
-        public void ClickFinishButton() => FindElement(By.Id(ID_FINISH_BUTTON)).Click();
-        public string GetItemsTotal() => FindElement(By.XPath(XPATH_ITEM_TOTAL)).Text;
+        public void ClickFinishButton() => Driver.FindElement(By.Id(ID_FINISH_BUTTON)).Click();
+        public string GetItemsTotal() => Driver.FindElement(By.XPath(XPATH_ITEM_TOTAL)).Text;
         #endregion
     }
 }

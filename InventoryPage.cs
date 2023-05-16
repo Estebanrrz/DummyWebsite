@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Framework.Core;
+using OpenQA.Selenium;
 
 namespace Framework
 {
@@ -7,7 +8,7 @@ namespace Framework
     /// </summary>
     public class InventoryPage : BasePage
     {
-        public InventoryPage(IWebDriver driver) : base(driver)
+        public InventoryPage(SeleniumWebDriver driver) : base(driver)
         {
         }
         #region locators
@@ -18,8 +19,8 @@ namespace Framework
         private const string XPATH_ITEM_PRICE = ".//div[@class='inventory_item_price']";
         #endregion
         #region Methods
-        public void ClickShoppingCartButton() => FindElement(By.XPath(XPATH_SHOPPING_CART_BUTTON)).Click();
-        public string GetNumberOfItemsOnShoppingCart() => FindElement(By.XPath(XPATH_COUNT_SHOPPING_CART)).Text;
+        public void ClickShoppingCartButton() => Driver.FindElement(By.XPath(XPATH_SHOPPING_CART_BUTTON)).Click();
+        public string GetNumberOfItemsOnShoppingCart() => Driver.FindElement(By.XPath(XPATH_COUNT_SHOPPING_CART)).Text;
        
         /// <summary>
        /// Add Item to Cart by Item Name
@@ -27,7 +28,7 @@ namespace Framework
        /// <param name="itemName">Item to add to the cart</param>
         public void AddItemToCart(string itemName)
         {
-            var item = FindElement(By.XPath(string.Format(XPATH_ITEM_BY_NAME_PARTIAL, itemName)));
+            var item = Driver.FindElement(By.XPath(string.Format(XPATH_ITEM_BY_NAME_PARTIAL, itemName)));
             item.FindElement(By.XPath(XPATH_ADD_TO_CART_BUTTON)).Click();
         }
 
@@ -38,7 +39,7 @@ namespace Framework
         /// <returns></returns>
         public string GetItemPrice(string itemName)
         {
-            var item = FindElement(By.XPath(string.Format(XPATH_ITEM_BY_NAME_PARTIAL, itemName)));
+            var item = Driver.FindElement(By.XPath(string.Format(XPATH_ITEM_BY_NAME_PARTIAL, itemName)));
             return item.FindElement(By.XPath(XPATH_ITEM_PRICE)).Text;
         }
 
@@ -48,7 +49,7 @@ namespace Framework
         /// <returns></returns>
         public string GetNumberOfItemsInCart()
         {
-        return FindElement(By.XPath(XPATH_COUNT_SHOPPING_CART)).Text;
+        return Driver.FindElement(By.XPath(XPATH_COUNT_SHOPPING_CART)).Text;
         }
 
 
