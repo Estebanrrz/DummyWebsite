@@ -51,8 +51,6 @@ namespace Framework
         {
         return Driver.FindElement(By.XPath(XPATH_COUNT_SHOPPING_CART)).Text;
         }
-
-
         #endregion
     }
 }

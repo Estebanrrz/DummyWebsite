@@ -4,6 +4,9 @@ using SeleniumExtras.WaitHelpers;
 
 namespace Framework.Core
 {
+    /// <summary>
+    /// implemented IDriver interface  for SeleniumWebDriver
+    /// </summary>
     public class SeleniumWebDriver : IDriver
     {
         public IWebDriver wrappedDriver { get; }
@@ -19,11 +22,20 @@ namespace Framework.Core
         {
             wrappedDriver?.Quit();
         }
+
+        /// <summary>
+        ///  Creates new  IOptions based on the IwebElement
+        /// </summary>
+        /// <returns></returns>
         public IOptions Manage()
         {
             return wrappedDriver.Manage();
         }
 
+        /// <summary>
+        ///  Creates new  INavigation based on the IwebElement
+        /// </summary>
+        /// <returns></returns>
         public INavigation Navigate()
         {
             return wrappedDriver.Navigate();

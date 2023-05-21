@@ -1,6 +1,4 @@
 ﻿using Framework.Core;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 
 namespace Framework
@@ -16,5 +14,5 @@ namespace Framework
             Driver = driver;
         }
 
-            }
+    }
 }

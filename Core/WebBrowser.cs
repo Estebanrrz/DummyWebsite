@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Framework.Core
+﻿namespace Framework.Core
 {
+    /// <summary>
+    /// Enum for WebBrowsers
+    /// </summary>
     public enum WebBrowser
     {        
         Firefox,

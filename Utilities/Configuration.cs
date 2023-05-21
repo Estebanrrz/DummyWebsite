@@ -2,6 +2,9 @@
 
 namespace DummyWebSiteTests.Utilities
 {
+    /// <summary>
+    /// Configuration class to get information  from appsettings.json
+    /// </summary>
     public static class Configuration
     {
         public static IConfigurationRoot? ConfigurationSettings { get; set; }

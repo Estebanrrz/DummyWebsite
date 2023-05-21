@@ -14,5 +14,10 @@ namespace Framework
         #region locators
         private const string XPATH_THANK_YOU_MESSAGE = "//h2[@class='complete-header']";
         #endregion
+
+        public string GetThankYouMessage()
+        {
+            return Driver.FindElement(By.XPath(XPATH_THANK_YOU_MESSAGE)).Text;
+        }
     }
 }

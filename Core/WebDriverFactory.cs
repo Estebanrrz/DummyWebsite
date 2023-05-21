@@ -4,6 +4,9 @@ using OpenQA.Selenium.Firefox;
 
 namespace Framework.Core
 {
+    /// <summary>
+    /// Factory for WebDrivers
+    /// </summary>
     public class WebDriverFactory
     {
         public static IWebDriver CreateWebDriver(WebBrowser name)
