@@ -61,9 +61,15 @@ The "Thank you for your order!" message should be displayed on the checkout comp
 
 ## Test Data:
 Username: standard_user
+
 Password: secret_sauce
+
 Item 1: Sauce Labs Backpack
+
 Item 2: Sauce Labs Bike Light
+
 First Name: John
+
 Last Name: Doe
+
 Zip Code: 12345
