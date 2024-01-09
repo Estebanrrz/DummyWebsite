@@ -12,7 +12,7 @@ namespace Framework
         {
         }
         #region locators
-        private const string XPATH_ITEM_BY_NAME_PARTIAL = "//div[@class='inventory_item_name'][contains(text(),'{0}')]/ancestor::div[@class='inventory_item']";
+        private const string XPATH_ITEM_BY_NAME_PARTIAL = "//div[contains(@class,'inventory_item_name')][contains(text(),'{0}')]/ancestor::div[@class='inventory_item']";
         private const string XPATH_ADD_TO_CART_BUTTON = ".//button[contains(@class,'btn_inventory')]";
         private const string XPATH_SHOPPING_CART_BUTTON = "//a[contains(@class,'shopping_cart_link')]";
         private const string XPATH_COUNT_SHOPPING_CART = "//div[@id='shopping_cart_container']/a/span";
